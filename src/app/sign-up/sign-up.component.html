@@ -1,0 +1,61 @@
+<p-dialog
+  [(visible)]="showSignUp"
+  (onHide)="hideSignUp()"
+  class="signUp"
+>
+  <div class="mt-2">
+    <form [formGroup]="authenticateForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+      <div class="field">
+        <label for="emailId">Email Id</label>
+        <input
+          id="emailId"
+          type="email"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+      <div class="field">
+        <label for="emailId">Mobile Number</label>
+        <input
+          id="mobileNumber"
+          type="email"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+      <div class="field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          id="confirmPassword"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+    </form>
+  </div>
+  <p>
+    Website under development
+    <br />
+    For more information call us on
+    <br />
+    +91 - 7020956193
+    <br />
+    +91 - 9403225769
+    <br />
+    +91 - 7058677407
+  </p>
+</p-dialog>
