@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build -- --prod  # Build the Angular app with production settings
+        run: npm run build  # Build the Angular app with production settings
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
